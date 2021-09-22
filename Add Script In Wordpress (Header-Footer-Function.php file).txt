@@ -1,0 +1,12 @@
+function google_analytics_script(){ 
+	?>
+		<script>
+		  $(document).ready(function(){
+			  $("p").click(function(){
+			    $(this).hide();
+			  });
+			});
+		</script>
+	<?php
+}
+add_action('wp_head', 'google_analytics_script');
